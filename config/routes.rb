@@ -5,5 +5,8 @@ Rails.application.routes.draw do
     resource :yarns do
       resource :yarns
     end
+    resource :patterns do
+      resource :patterns
+    end
   end
 end
