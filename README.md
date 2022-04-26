@@ -51,11 +51,15 @@ rubocop --auto-correct-all
 
 ## Instructions for use
 
-This project is a back end server serving JSON data from the Yarn search from the Ravelry API.
+This project is a back end server serving JSON data from the Yarn and Pattern search from the Ravelry API.
 
-To query the API, use this route:
+To query the API for yarns, use this route:
 
 `http://127.0.0.1:3000/api/yarns.json?query={QUERY GOES HERE}`
+
+To query the API for patterns, use this route:
+
+`http://127.0.0.1:3000/api/patterns.json?query={QUERY GOES HERE}`
 
 The intended use is with [the Vue front end](https://github.com/graceolivia/yarn-detective-8-front-end).'
 
