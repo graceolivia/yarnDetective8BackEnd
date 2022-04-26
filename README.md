@@ -57,4 +57,6 @@ To query the API, use this route:
 
 `http://127.0.0.1:3000/api/yarns.json?query={QUERY GOES HERE}`
 
-The intended use is with [the Vue front end](https://github.com/graceolivia/yarn-detective-8-front-end).
+The intended use is with [the Vue front end](https://github.com/graceolivia/yarn-detective-8-front-end).'
+
+Important note: The back end needs to run on port 3000 for the front end to be able to interact with it.
