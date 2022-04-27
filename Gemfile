@@ -45,3 +45,5 @@ end
 gem 'pg', '~> 1.3'
 
 gem 'httparty', '~> 0.20.0'
+
+gem 'minitest-stub_any_instance'

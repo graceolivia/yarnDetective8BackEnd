@@ -4,6 +4,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
 require 'minitest/autorun'
+require 'minitest/stub_any_instance'
 
 module ActiveSupport
   class TestCase

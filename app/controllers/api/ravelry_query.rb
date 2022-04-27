@@ -5,7 +5,7 @@ module Api
     def initialize(search_category, httparty)
       @search_category = search_category
       @httparty = httparty
-      @allowed_queries = %w[yarns patterns]
+      @allowed_queries = %w[yarns]
     end
 
     def search(query)
