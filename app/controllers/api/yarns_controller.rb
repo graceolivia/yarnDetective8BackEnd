@@ -8,7 +8,12 @@ module Api
       ravelry_query = Api::RavelryQuery.new('yarns', httparty)
       query = params[:query]
       rsearch = ravelry_query.search(query)
-      render json: rsearch
+      if rsearch.include? '403 Forbidden'
+        render json: '{ "error" : "Problem connecting to ravelry. Make sure you are connected.",' \
+        ' "status": "500 Internal Server Error"}'
+      else
+        render json: rsearch
+      end
     end
   end
 end
