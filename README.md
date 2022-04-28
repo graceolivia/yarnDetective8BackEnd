@@ -80,10 +80,10 @@ rubocop --auto-correct-all
 
 ## Instructions for use
 
-This project is a back end server serving JSON data from the Yarn search from the Ravelry API.
+This project is a back end server serving JSON data from the Yarn search from the Ravelry API. In order for it to work with the front end, it must be running on port 3000.
 
 To query the API, use this route:
 
-`http://127.0.0.1:3000/api/yarns.json?query={QUERY GOES HERE}`
+`http://127.0.0.1:3000/api/yarns?query={QUERY GOES HERE}`
 
 The intended use is with [the Vue front end](https://github.com/graceolivia/yarn-detective-8-front-end).
